@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo">Khushi Giri <i
+                        class="fas fa-laptop-code"></i></div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div>
+                <h1>Hello, I'm <span>Khushi</span></h1>
+                <div class="typewriter">A Tech Enthusiast & Developer 🚀</div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <div class="about-wrapper">
+                <div class="about-text">
+                    <p>
+                        Hi, I’m Khushi Giri, a third-year engineering student
+                        with a strong interest in building innovative and
+                        practical tech solutions. I’m passionate about software
+                        development as a whole, whether it’s coding efficient
+                        algorithms, designing user-friendly interfaces, or
+                        working with databases. I enjoy learning new tools and
+                        technologies that expand my perspective and sharpen my
+                        problem-solving skills.
+                    </p>
+                    <br />
+                    <p>
+                        While I’ve worked extensively on web development
+                        projects like a BookMyShow Clone, Zomato Landing Page
+                        Clone, and a Book Record Management API, I’ve also
+                        explored backend development, API design, and core
+                        programming in Java and Python. These experiences have
+                        helped me grow beyond just frontend work and shaped me
+                        into a more versatile developer.
+                    </p>
+                    <br />
+                    <p>
+                        My technical toolkit includes Java, Python, JavaScript,
+                        React, Node.js, Express.js, MongoDB, SQL, and tools like
+                        Postman and GitHub. I’m constantly seeking opportunities
+                        to apply my skills across different domains and
+                        contribute meaningfully to any tech-driven environment.
+
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="Images/Profile Picture.png" alt="Khushi" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card" onclick="openModal('modal1')">
+                    <h3>Zomato Clone</h3>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" onclick="openModal('modal2')">
+                    <h3>Task Management</h3>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" onclick="openModal('modal3')">
+                    <h3>Book API</h3>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" onclick="openModal('modal4')">
+                    <h3>BookMyShow Clone</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modals -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal1')"><i
+                        class="fas fa-times"></i></span>
+                <h2>Zomato Clone</h2>
+                <p>This project is a front-end UI clone of the popular food
+                    delivery platform Zomato, built using HTML, CSS, and Font
+                    Awesome icons.
+                </p>
+                <p>It replicates the visual design and layout of
+                    the original app, showcasing responsive design, consistent
+                    styling, and structured layout elements.
+                </p>
+                <p>The clone includes
+                    sections like homepage banners, navigation bar, restaurant
+                    listings, and footer components to give users a real-time
+                    app experience.</p>
+                <p><a href="https://khushigiri-zomato-clone.netlify.app/" ,
+                        target="_blank">Project Link</a></p>
+                <p><a href="https://github.com/khushigiri/ZomatoRepo" ,
+                        target="_blank">GitHub Code Link</a></p>
+            </div>
+        </div>
+
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal2')"><i
+                        class="fas fa-times"></i></span>
+                <h2>Task Management</h2>
+                <p>
+                    Built with HTML, CSS, JavaScript, and Bootstrap, this Task
+                    Management Application enables users to create, view, edit,
+                    and delete tasks with ease.
+                </p>
+                <p>The user-friendly interface
+                    ensures smooth navigation and an intuitive experience across
+                    devices, thanks to responsive design elements provided by
+                    Bootstrap.
+                </p>
+                <p>Each task includes a title and description, and
+                    the application leverages the browser's local storage to
+                    maintain data persistence even after refreshing or closing
+                    the browser.
+                </p>
+                <p><a href="https://khushigiri-build.netlify.app/" ,
+                        target="_blank">Project Link</a></p>
+                <p><a href="https://github.com/khushigiri/BuildRepo" ,
+                        target="_blank">GitHub Code Link</a></p>
+            </div>
+        </div>
+
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal3')"><i
+                        class="fas fa-times"></i></span>
+                <h2>Book API</h2>
+                <p>This project is a RESTful API built with Node.js, Express.js,
+                    and MongoDB for managing books and user data in a library or
+                    book record system.
+                </p>
+                <p> The API supports full CRUD operations
+                    (Create, Read, Update, Delete) for both entities and is
+                    designed to be scalable, secure, and easy to integrate with
+                    frontend applications or third-party services.</p>
+                <p><a
+                        href="https://github.com/khushigiri/BookLibraryManagementRepo"
+                        ,
+                        target="_blank">GitHub Code Link</a></p>
+            </div>
+        </div>
+
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal('modal4')"><i
+                        class="fas fa-times"></i></span>
+                <h2>BookMyShow Clone</h2>
+                <p>I created a BookMyShow clone using React, Tailwind CSS, and
+                    the TMDB API to simulate an online movie booking platform.
+                </p>
+                <p>The project features a clean, responsive UI with dynamic
+                    routing and reusable components, allowing users to explore
+                    movies seamlessly across devices.
+                </p>
+                <p>React was used for
+                    managing components and state, while Tailwind CSS handled
+                    the layout and styling.
+                </p>
+                <p>
+                    The TMDB API integration enables real-time fetching of movie
+                    data, including posters, ratings, genres, and descriptions.
+                    Key features include a trending movie carousel, genre-based
+                    filtering, and detailed movie pages.
+                </p>
+                <p><a href="https://github.com/khushigiri/BookMyShowCloneRepo" ,
+                        target="_blank">GitHub Code Link</a></p>
+
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea rows="5" placeholder="Your Message"
+                    required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2025 Portfolio. All Rights Reserved | Designed by Khushi Giri
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
