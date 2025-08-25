@@ -68,6 +68,27 @@ body {
     /* green-blue gradient */
 }
 
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #FFD700;
+    /* gold hover */
+}
+
+
 #skills h5 {
     font-weight: 700;
     margin-bottom: 12px;
